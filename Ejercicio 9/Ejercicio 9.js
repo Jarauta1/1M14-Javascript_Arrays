@@ -7,9 +7,10 @@ do {
     
     num = parseInt(window.prompt("Escribe un valor entre 0 y 9"))
     if (num < 10) {
-        mensaje += `<p>El número de la tabla seleccionado es: ${array[num]}</p>`
-        document.getElementById("div1").innerHTML = mensaje
         array[num] = array[num] * 2
+        mensaje += `<p>El número de la tabla seleccionado es: ${num} su valor actual es: ${array[num]}</p>`
+        document.getElementById("div1").innerHTML = mensaje
+        
     }
 } while (num < 10)
 
